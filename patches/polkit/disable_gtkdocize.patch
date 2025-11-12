@@ -1,0 +1,19 @@
+diff --git i/configure.ac w/configure.ac
+index 5cedb4e..d988430 100644
+--- i/configure.ac
++++ w/configure.ac
+@@ -50,7 +50,13 @@ AC_PATH_PROG([XSLTPROC], [xsltproc])
+ fi
+ AM_CONDITIONAL(MAN_PAGES_ENABLED, test x$enable_man_pages = xyes)
+ 
+-GTK_DOC_CHECK([1.3])
++# Disable gtk-doc entirely (no gtkdocize, no doc generation)
++AM_CONDITIONAL([ENABLE_GTK_DOC], [false])
++AM_CONDITIONAL([GTK_DOC_USE_LIBTOOL], [false])
++AM_CONDITIONAL([GTK_DOC_BUILD_HTML], [false])
++AM_CONDITIONAL([GTK_DOC_BUILD_PDF], [false])
++AM_CONDITIONAL([HAVE_GTK_DOC], [false])
++enable_gtk_doc=no
+ 
+ #### gcc warning flags
+ 

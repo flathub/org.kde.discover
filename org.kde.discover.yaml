@@ -245,11 +245,12 @@ modules:
                 sha256: 88170c9e711e8db305a12fdb8234fac5706c61969b94e084d0f117d8ec5d34b1
               - type: patch
                 path: patches/polkit/polkit-build-Add-option-to-build-without-polkitd.patch
+              - type: patch
+                path: patches/polkit/disable_gtkdocize.patch
               - type: script
                 dest-filename: autogen.sh
                 commands:
                   - |
-                    gtkdocize --flavour no-tmpl
                     autoreconf -if
 
           - name: libfuse
