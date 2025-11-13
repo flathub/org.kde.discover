@@ -79,6 +79,28 @@ modules:
         path: fix-appstream-id-mismatch.patch
 
     modules:
+      # discover build fails on linking on arm only
+      - name: qcoro
+        buildsystem: cmake-ninja
+        only-arches:
+          - aarch64
+        config-opts:
+          - -DBUILD_TESTING=OFF
+          - -DCMAKE_BUILD_TYPE=Release
+        build-options:
+          arch:
+            aarch64:
+              cxxflags: -fPIC
+        sources:
+          - type: archive
+            url: https://github.com/danvratil/qcoro/archive/refs/tags/v0.12.0.tar.gz
+            sha256: 809afafab61593f994c005ca6e242300e1e3e7f4db8b5d41f8c642aab9450fbc
+            x-checker-data:
+              type: anitya
+              project-id: 236236
+              stable-only: true
+              url-template: https://github.com/danvratil/qcoro/archive/refs/tags/v$version.tar.gz
+
       - name: appstream
         config-opts:
           - -Dqt=true
