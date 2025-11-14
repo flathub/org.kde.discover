@@ -5,6 +5,8 @@ sdk: org.kde.Sdk
 command: plasma-discover
 rename-icon: plasmadiscover
 finish-args:
+    # 3D acceleration
+  - --device=dri
     # access to system flatpaks, nothing works without it
   - --filesystem=/var/lib/flatpak
     # access to user flatpaks
