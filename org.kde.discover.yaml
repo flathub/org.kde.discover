@@ -36,6 +36,7 @@ finish-args:
 cleanup:
   - /include
   - /lib/pkgconfig
+  - /lib/cmake
   - /share/man
   - '*.pc'
   - '*.a'
