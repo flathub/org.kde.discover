@@ -265,6 +265,7 @@ modules:
               - INIT_D_PATH=/app/etc/init.d
             cleanup:
               - /bin/ulockmgr_server
+              - /etc/*
             post-install:
               - install -Dpm0755 ./fusermount-wrapper.sh /app/bin/fusermount
             sources:
