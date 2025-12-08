@@ -5,31 +5,31 @@ sdk: org.kde.Sdk
 command: plasma-discover
 rename-icon: plasmadiscover
 finish-args:
-    # 3D acceleration
+  # 3D acceleration
   - --device=dri
-    # access to system flatpaks, nothing works without it
+  # access to system flatpaks, nothing works without it
   - --filesystem=/var/lib/flatpak
-    # access to user flatpaks
+  # access to user flatpaks
   - --filesystem=xdg-data/flatpak
-    # Install or upgrade of flatpaks doesn't work without it
+  # Install or upgrade of flatpaks doesn't work without it
   - --filesystem=/var/tmp
-    # Needed for cleaning up remaining user data of flatpaks
+  # Needed for cleaning up remaining user data of flatpaks
   - --filesystem=~/.var/app
-    # X11
+  # X11
   - --share=ipc
-    # download applications from the internet
+  # download applications from the internet
   - --share=network
-    # show a window
+  # show a window
   - --socket=fallback-x11
   - --socket=wayland
-    # Removing and installing doesn't work without it
+  # Removing and installing doesn't work without it
   - --system-talk-name=org.freedesktop.Flatpak.SystemHelper
-    # fwupd integration
+  # fwupd integration
   - --system-talk-name=org.freedesktop.fwupd
-    # needed for installing flatpaks
+  # needed for installing flatpaks
   - --talk-name=org.freedesktop.Flatpak
 
-    # for the button that launches the plasma logout prompt
+  # for the button that launches the plasma logout prompt
   - --talk-name=org.kde.LogoutPrompt
   - --talk-name=org.kde.Shutdown
 
@@ -53,7 +53,8 @@ modules:
       - /lib/krb5
       - /lib/plasma-discover/libDiscoverNotifiers.so
       - /lib/plugins/discover-notifier/FlatpakNotifier.so
-      - /lib/plugins/discover/kns-backend.so # no idea if this will ever work, removing it for now
+      # TODO: make kns work, remove this
+      - /lib/plugins/discover/kns-backend.so
       - /share/applications/org.kde.discover.snap.desktop
       - /share/knotifications6/discoverabstractnotifier.notifyrc
       - /share/locale/*/LC_MESSAGES/kcm_updates.mo
@@ -107,10 +108,9 @@ modules:
               type: git
               tag-pattern: ^v([\d.]+)$
 
-      # supports cmake now but I can't convinvce appstream to find it then
+        # supports cmake now but I can't convinvce appstream to find it then
         modules:
           - name: libfyaml
-        #buildsystem: cmake-ninja
             buildsystem: autotools
             make-install-args:
               - PREFIX=/app
@@ -317,8 +317,6 @@ modules:
               - -Dtests=false
             cleanup:
               - '*'
-#             - /share/zsh
-#             - /share/bash-completion
             sources:
               - type: archive
                 url: https://github.com/containers/bubblewrap/archive/refs/tags/v0.11.0.tar.gz
