@@ -182,7 +182,6 @@ modules:
           - -Dmalcontent=disabled
           - -Dsandboxed_triggers=false
           - -Dsystem_helper=enabled # we need polkit for this, so we can install flatpaks from system remote
-          - -Dhttp_backend=curl
           - -Dsystemd=disabled
           - -Dsystem_install_dir=/var/lib/flatpak
           - -Dsystem_bubblewrap=bwrap
