@@ -238,8 +238,8 @@ modules:
             sources:
               - type: git
                 url: https://github.com/polkit-org/polkit
-                commit: d627b0d1e1108563658dabe3fb8d2a065e64df10
-                tag: '126'
+                commit: 9e4894c969eecf26a3ba762f4f7a268aa0fb3e51
+                tag: '127'
                 x-checker-data:
                   type: git
                   tag-pattern: ^([\d.]+)$
