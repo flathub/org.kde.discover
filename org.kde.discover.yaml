@@ -142,8 +142,8 @@ modules:
           - -Dintrospection=disabled
         sources:
           - type: archive
-            url: https://github.com/fwupd/fwupd/releases/download/2.0.18/fwupd-2.0.18.tar.xz
-            sha256: c6d9e5fcbc63354344016dd398fc6b6050747b35636551df022f52ffe3957382
+            url: https://github.com/fwupd/fwupd/releases/download/2.0.19/fwupd-2.0.19.tar.xz
+            sha256: 3bb7a4a1e2d00f0ab513e4c667d7bf5a3ff34a9802757849d3fedf07dd40ddbb
             x-checker-data:
               type: anitya
               project-id: 5833
@@ -238,8 +238,8 @@ modules:
             sources:
               - type: git
                 url: https://github.com/polkit-org/polkit
-                commit: d627b0d1e1108563658dabe3fb8d2a065e64df10
-                tag: '126'
+                commit: 9e4894c969eecf26a3ba762f4f7a268aa0fb3e51
+                tag: '127'
                 x-checker-data:
                   type: git
                   tag-pattern: ^([\d.]+)$
