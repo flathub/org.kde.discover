@@ -70,6 +70,8 @@ modules:
           project-id: 8761
           stable-only: true
           url-template: https://download.kde.org/stable/plasma/$version/discover-$version.tar.xz
+          is-main-source: true
+
       # Warn about missing functionality
       - type: patch
         path: metainfo-warning.patch
@@ -108,6 +110,7 @@ modules:
             x-checker-data:
               type: git
               tag-pattern: ^v([\d.]+)$
+              is-important: true
 
         # supports cmake now but I can't convinvce appstream to find it then
         modules:
@@ -213,6 +216,7 @@ modules:
             x-checker-data:
               type: git
               tag-pattern: ^([\d.]+)$
+              is-important: true
 
         modules:
           # needed by flatpak system_helper
