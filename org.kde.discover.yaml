@@ -92,6 +92,7 @@ modules:
           - -Dman=false
           - -Dapidocs=false
           - -Dinstall-docs=false
+          - -Dbash-completion=false
         cleanup:
           - /share/metainfo
           - /bin/appstreamcli
