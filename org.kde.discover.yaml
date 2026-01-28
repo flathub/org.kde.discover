@@ -105,8 +105,8 @@ modules:
         sources:
           - type: git
             url: https://github.com/ximion/appstream.git
-            commit: d6ce0a8dbdf31a33762009a0e1f364e938470af2
-            tag: v1.1.1
+            commit: 699a38f9ba93782a0fa19c86f81db0d6424d3afa
+            tag: v1.1.2
             x-checker-data:
               type: git
               tag-pattern: ^v([\d.]+)$
