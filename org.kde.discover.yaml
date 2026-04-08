@@ -209,8 +209,8 @@ modules:
         sources:
           - type: git
             url: https://github.com/flatpak/flatpak/
-            commit: 13b26a94a3bd6fec309a16982a3a80d83776d7ac
-            tag: 1.17.3
+            commit: 2c7f24dcbf45aaec453960b61d24574c4f489dae
+            tag: 1.17.4
             x-checker-data:
               type: git
               tag-pattern: ^([\d.]+)$
@@ -327,8 +327,8 @@ modules:
               - '*'
             sources:
               - type: archive
-                url: https://github.com/flatpak/xdg-dbus-proxy/archive/refs/tags/0.1.6.tar.gz
-                sha256: ee9c1d665f4e3b025a83d522d478ff7930070f2817fc2cb446db0dca93c990b1
+                url: https://github.com/flatpak/xdg-dbus-proxy/archive/refs/tags/0.1.7.tar.gz
+                sha256: 232d2eb9b456fa1e307322da1bfeb4849eb410750a2a16a5de51ed2c2eb919e6
                 x-checker-data:
                   type: anitya
                   project-id: 58434
