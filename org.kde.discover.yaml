@@ -63,8 +63,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.6.4/discover-6.6.4.tar.xz
-        sha256: dd673afead30054f7492a882a2e58aad6cb0c52056f8b503a027bce5e04ef4da
+        url: https://download.kde.org/stable/plasma/6.6.5/discover-6.6.5.tar.xz
+        sha256: 0d1471adf4b0b3bf92ac93225e2e4860493677f3fb9a02dbf44b193ae7c15357
         x-checker-data:
           type: anitya
           project-id: 8761
@@ -143,8 +143,8 @@ modules:
           - -Dintrospection=disabled
         sources:
           - type: archive
-            url: https://github.com/fwupd/fwupd/releases/download/2.1.2/fwupd-2.1.2.tar.xz
-            sha256: 7d8d0762aa4095e8e7211a91550ab5c4db5e4fb4cad48087da522f580a4cc9d9
+            url: https://github.com/fwupd/fwupd/releases/download/2.1.3/fwupd-2.1.3.tar.xz
+            sha256: 9609b75b0706265f589b9b15e9c1f986832b523b94f994d00f5284d3ff15f503
             x-checker-data:
               type: anitya
               project-id: 5833
