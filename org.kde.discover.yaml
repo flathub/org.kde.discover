@@ -63,8 +63,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.7.2/discover-6.7.2.tar.xz
-        sha256: facb7cfce3c948ddf8f8ff0a7281f821e0e3ace50dee90fbb9efe486836b948e
+        url: https://download.kde.org/stable/plasma/6.7.3/discover-6.7.3.tar.xz
+        sha256: f28c47569ddffd95c1095ea6c73cfe01a6943bbb3be5d8158d5431c443439f1c
         x-checker-data:
           type: anitya
           project-id: 8761
@@ -103,8 +103,8 @@ modules:
         sources:
           - type: git
             url: https://github.com/ximion/appstream.git
-            commit: 559d20cd46919346ef05916c58f75cbfe1a1c919
-            tag: v1.1.3
+            commit: 96c4c1fada6a0131a0b777577bdf353251a6021a
+            tag: v1.1.4
             x-checker-data:
               type: git
               tag-pattern: ^v([\d.]+)$
@@ -143,8 +143,8 @@ modules:
           - -Dintrospection=disabled
         sources:
           - type: archive
-            url: https://github.com/fwupd/fwupd/releases/download/2.1.5/fwupd-2.1.5.tar.xz
-            sha256: 9bde8d85ceb4ea30c92272cfe17941d8cd25ab469402864bc6981585d7eacc07
+            url: https://github.com/fwupd/fwupd/releases/download/2.1.6/fwupd-2.1.6.tar.xz
+            sha256: 517a0d9d4b00f3dbd72c36f55085bd5dbdc20e7a2d6cfc341c4be60a903bcd8d
             x-checker-data:
               type: anitya
               project-id: 5833
@@ -291,8 +291,8 @@ modules:
             sources:
               - type: git
                 url: https://github.com/ostreedev/ostree
-                tag: v2026.1
-                commit: 84fcfe17adcc69b926e8205782c1f735c09bfdd9
+                tag: v2026.2
+                commit: 4672e91445451660eaa4405630692ade1b48c914
                 x-checker-data:
                   type: anitya
                   project-id: 10899
