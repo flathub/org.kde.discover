@@ -213,7 +213,7 @@ modules:
             tag: 1.18.0
             x-checker-data:
               type: git
-              tag-pattern: ^([\d.]+)$
+              tag-pattern: ^(1\.[0-8][02468]\..*)$
               is-important: true
 
         modules:
