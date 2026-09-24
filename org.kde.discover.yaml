@@ -103,10 +103,13 @@ modules:
         sources:
           - type: git
             url: https://github.com/ximion/appstream.git
-            commit: ce52fb058e06f1f36320911e93e6773c6e3fe82e
-            tag: v1.2.0
+            commit: 559d20cd46919346ef05916c58f75cbfe1a1c919
+            tag: v1.1.3
             x-checker-data:
               type: git
+              versions:
+                # compilation is broken for some reason
+                <: 1.1.4
               tag-pattern: ^v([\d.]+)$
               is-important: true
 
