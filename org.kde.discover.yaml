@@ -63,8 +63,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.7.2/discover-6.7.2.tar.xz
-        sha256: facb7cfce3c948ddf8f8ff0a7281f821e0e3ace50dee90fbb9efe486836b948e
+        url: https://download.kde.org/stable/plasma/6.7.5/discover-6.7.5.tar.xz
+        sha256: e9830fffebc54c781dcb076db4ab9462ee27ddd7fd3769403a211743636e1f67
         x-checker-data:
           type: anitya
           project-id: 8761
@@ -103,8 +103,8 @@ modules:
         sources:
           - type: git
             url: https://github.com/ximion/appstream.git
-            commit: 559d20cd46919346ef05916c58f75cbfe1a1c919
-            tag: v1.1.3
+            commit: ce52fb058e06f1f36320911e93e6773c6e3fe82e
+            tag: v1.2.0
             x-checker-data:
               type: git
               tag-pattern: ^v([\d.]+)$
@@ -143,8 +143,8 @@ modules:
           - -Dintrospection=disabled
         sources:
           - type: archive
-            url: https://github.com/fwupd/fwupd/releases/download/2.1.5/fwupd-2.1.5.tar.xz
-            sha256: 9bde8d85ceb4ea30c92272cfe17941d8cd25ab469402864bc6981585d7eacc07
+            url: https://github.com/fwupd/fwupd/releases/download/2.1.8/fwupd-2.1.8.tar.xz
+            sha256: 8724305a52621ab6586de3290f6a78edb8393a4aa4bcb6c63f9228ae5e00acf8
             x-checker-data:
               type: anitya
               project-id: 5833
@@ -209,8 +209,8 @@ modules:
         sources:
           - type: git
             url: https://github.com/flatpak/flatpak/
-            commit: 5de2b58bdafde88515d9d6b9189bd1cfd3b88c46
-            tag: 1.18.0
+            commit: 346b41f2e91bff14de940704302625c517d856b2
+            tag: 1.18.3
             x-checker-data:
               type: git
               tag-pattern: ^(1\.[0-8][02468]\..*)$
@@ -291,8 +291,8 @@ modules:
             sources:
               - type: git
                 url: https://github.com/ostreedev/ostree
-                tag: v2026.1
-                commit: 84fcfe17adcc69b926e8205782c1f735c09bfdd9
+                tag: v2026.4
+                commit: 4f4445a8912f70c604fa84a057a8f4e904e35a24
                 x-checker-data:
                   type: anitya
                   project-id: 10899
@@ -311,8 +311,8 @@ modules:
               - '*'
             sources:
               - type: archive
-                url: https://github.com/containers/bubblewrap/archive/refs/tags/v0.11.2.tar.gz
-                sha256: 3fc7b94dd133539365dc573fe79d207802ce433e6e34b791a8b1080b17803a28
+                url: https://github.com/containers/bubblewrap/archive/refs/tags/v0.13.0.tar.gz
+                sha256: caecc52894a20ad9c932af8cb2a2c1bfd251b2d085f16d6c4d0424624c6c3cf9
                 x-checker-data:
                   type: anitya
                   project-id: 10937
@@ -327,8 +327,8 @@ modules:
               - '*'
             sources:
               - type: archive
-                url: https://github.com/flatpak/xdg-dbus-proxy/archive/refs/tags/0.1.7.tar.gz
-                sha256: 232d2eb9b456fa1e307322da1bfeb4849eb410750a2a16a5de51ed2c2eb919e6
+                url: https://github.com/flatpak/xdg-dbus-proxy/archive/refs/tags/0.1.9.tar.gz
+                sha256: 88e793b5f89a4ff55c7212d8f9cda38fcf8434614bd05669d4c6562622d63bdd
                 x-checker-data:
                   type: anitya
                   project-id: 58434
