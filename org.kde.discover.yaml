@@ -63,8 +63,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.7.5/discover-6.7.5.tar.xz
-        sha256: e9830fffebc54c781dcb076db4ab9462ee27ddd7fd3769403a211743636e1f67
+        url: https://download.kde.org/stable/plasma/6.8.0/discover-6.8.0.tar.xz
+        sha256: db7f4553852e6fbbcaf549fc77fc2c0856e5e7217745ccf1ab8b473e1d5ad6e4
         x-checker-data:
           type: anitya
           project-id: 8761
@@ -314,8 +314,8 @@ modules:
               - '*'
             sources:
               - type: archive
-                url: https://github.com/containers/bubblewrap/archive/refs/tags/v0.13.0.tar.gz
-                sha256: caecc52894a20ad9c932af8cb2a2c1bfd251b2d085f16d6c4d0424624c6c3cf9
+                url: https://github.com/containers/bubblewrap/archive/refs/tags/v0.13.1.tar.gz
+                sha256: b5cdc362b4bbe8906318ec68418de1fb050a8c6701534a81c0e94088ad74c22e
                 x-checker-data:
                   type: anitya
                   project-id: 10937
