@@ -63,8 +63,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.7.5/discover-6.7.5.tar.xz
-        sha256: e9830fffebc54c781dcb076db4ab9462ee27ddd7fd3769403a211743636e1f67
+        url: https://download.kde.org/stable/plasma/6.8.1/discover-6.8.1.tar.xz
+        sha256: 8e2c92004dee696a08daafb26362c84468fa2e5a81fcdf3a62c88ac2aa27a8a7
         x-checker-data:
           type: anitya
           project-id: 8761
@@ -146,8 +146,8 @@ modules:
           - -Dintrospection=disabled
         sources:
           - type: archive
-            url: https://github.com/fwupd/fwupd/releases/download/2.1.8/fwupd-2.1.8.tar.xz
-            sha256: 8724305a52621ab6586de3290f6a78edb8393a4aa4bcb6c63f9228ae5e00acf8
+            url: https://github.com/fwupd/fwupd/releases/download/2.1.9/fwupd-2.1.9.tar.xz
+            sha256: d45f3cbac06f1f6da300fb7c148237ff15c12df9981824e925bc2f3722bff233
             x-checker-data:
               type: anitya
               project-id: 5833
@@ -243,8 +243,8 @@ modules:
             sources:
               - type: git
                 url: https://github.com/polkit-org/polkit
-                commit: 9e4894c969eecf26a3ba762f4f7a268aa0fb3e51
-                tag: '127'
+                commit: e6373dc19975d8583568c6cd7025d03e682ca956
+                tag: '128'
                 x-checker-data:
                   type: git
                   tag-pattern: ^([\d.]+)$
@@ -294,8 +294,8 @@ modules:
             sources:
               - type: git
                 url: https://github.com/ostreedev/ostree
-                tag: v2026.4
-                commit: 4f4445a8912f70c604fa84a057a8f4e904e35a24
+                tag: v2026.5
+                commit: 7ab59e047031812fc6b3d68cd20d0e110c3bf0a1
                 x-checker-data:
                   type: anitya
                   project-id: 10899
@@ -314,8 +314,8 @@ modules:
               - '*'
             sources:
               - type: archive
-                url: https://github.com/containers/bubblewrap/archive/refs/tags/v0.13.0.tar.gz
-                sha256: caecc52894a20ad9c932af8cb2a2c1bfd251b2d085f16d6c4d0424624c6c3cf9
+                url: https://github.com/containers/bubblewrap/archive/refs/tags/v0.13.1.tar.gz
+                sha256: b5cdc362b4bbe8906318ec68418de1fb050a8c6701534a81c0e94088ad74c22e
                 x-checker-data:
                   type: anitya
                   project-id: 10937
