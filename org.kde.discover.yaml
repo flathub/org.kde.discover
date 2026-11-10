@@ -63,8 +63,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.8.2/discover-6.8.2.tar.xz
-        sha256: 2bc7280155adb003498a3b31817be8815673cc665b424b98b8250cc97dff5bc6
+        url: https://download.kde.org/stable/plasma/6.8.3/discover-6.8.3.tar.xz
+        sha256: cfb851d648d634622ed7df686110678ecd915bc893f0dda5a59a4f94c4258807
         x-checker-data:
           type: anitya
           project-id: 8761
